@@ -1,0 +1,54 @@
+
+          <html>
+            <body><!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>Multiplication Table</h1>
+        <form>
+            <label>Number that you want the Multiplication table for</label>
+            <input type="number">
+            <br><br>
+            <label>The number of multiples</label>
+            <input type="number">
+        </form>
+        <br>
+        <button onclick="showtable()">Show Table</button>
+        <p></p>
+    </body>
+</html></body>
+            <style>body{
+    background-color: pink;
+    text-align: center;
+}
+h1{
+    color: purple;
+}
+label{
+    font-size: 20px;
+    color: blue;
+}
+button{
+    background-color: lightseagreen;
+    color: greenyellow;
+}
+p{
+    color: darkred;
+    font-weight: bold;
+    font-size: 25px;
+}
+</style>
+            <script>function showtable(){
+    var number=(document.getElementsByTagName("input")[0].value);
+    var multiples=(document.getElementsByTagName("input")[1].value);
+    var equations=number*multiples;
+    var i;
+    var result="";
+    for(i=1;i<=multiples;i=i+1){
+        equations=number*i;
+        result+="<br>"+number+"*"+i+"="+equations;
+        document.getElementsByTagName("p")[0].innerHTML=result;
+}}</script>
+          </html>
+        
